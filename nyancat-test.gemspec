@@ -1,7 +1,4 @@
-# -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'nyancat-test/version'
+require File.expand_path('../lib/nyancat-test/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = 'nyancat-test'
@@ -10,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.email         = ['craiglttl@gmail.com', 'noel@zendesk.com']
   gem.description   = %q{Nyan Cat for MiniTest}
   gem.summary       = %q{Nyan cat goodness for the testing masses.}
-  gem.homepage      = 'https://github.com/craiglittle/nyancat-test' 
+  gem.homepage      = 'https://github.com/craiglittle/nyancat-test'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
